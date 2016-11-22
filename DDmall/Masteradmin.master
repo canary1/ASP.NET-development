@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Masteradmin.master.cs" Inherits="Masteradmin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style=" width:100%;height:600px;">
+    <div style="float:left; height:148px; width: 100%; line-height: 20px; text-align:left; background-image: url('/image/beijing1.jpg');">
+        <div style="float:left; height:148px; width:15%; text-align: center; line-height:10px;">
+        <br/>
+        <asp:Image ID="Image1" runat="server" ImageUrl="~/image/biaoti1.jpg" Height="128px" Width="132px" />
+        </div>
+        <div  style="float:right; height:148px; width:84%; text-align: center; line-height:20px;">
+            <br/>
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/image/biaoti3.png"  Height="118px" Width="580px"/>           
+        </div>
+    </div>
+    <div style="float:left; background-color: #FFFFFF; height:10px;width:100%;"  >
+    </div>
+    
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            <div style="width: 100%; height: 442px" >
+            </div>
+        </asp:ContentPlaceHolder>
+    
+    </form>
+</body>
+</html>

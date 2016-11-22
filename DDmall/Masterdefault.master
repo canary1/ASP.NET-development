@@ -1,0 +1,77 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Masterdefault.master.cs" Inherits="Masterdefault" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style=" width:100%;height:30px;background-color: #339966;" >
+    <div style="float:left; width: 100%; background-color: #36AD6B; line-height: 30px; text-align: left;">
+        <asp:Label ID="Label1" runat="server"  ForeColor="#1C1C1C" style="text-decoration: none;font-family: 华文中宋;font-size: medium;" Text=" Hi，欢迎来到青木屋!"></asp:Label>
+          
+        &nbsp;
+     
+        <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="#1C1C1C" style="text-decoration: none;font-family: 华文中宋; font-size: medium;" OnClick="LinkButton1_Click" CausesValidation="False">请登录</asp:LinkButton>
+          
+        &nbsp;
+
+        <asp:LinkButton ID="LinkButton2" runat="server" ForeColor="#1C1C1C" style="text-decoration: none;font-family: 华文中宋; font-size:medium;" OnClick="LinkButton2_Click" CausesValidation="False">免费注册</asp:LinkButton>
+        &nbsp;
+
+        <asp:Label ID="Label4" runat="server"></asp:Label>
+
+   &nbsp;&nbsp;
+
+   </div>
+   <div style="float:left; height:128px; width:18%; text-align: center; line-height:10px;">
+       <br />
+       <asp:Image ID="Image1" runat="server" ImageUrl="~/image/biaoti1.jpg" Height="118px" Width="112px"  />   
+   </div>
+   <div style="float:left; height:128px; width:64%; text-align: center;"  >
+       <asp:Image ID="Image2" runat="server" ImageUrl="~/image/tupian1.jpg" Height="128px" Width="623px" />
+   </div>
+      <div style="float:right; height:128px; width:17%; text-align: left;">
+         
+          <br />
+          <br />
+          <br />
+          <br />
+          &nbsp;&nbsp;
+          <asp:ImageButton ID="ImageButton2" runat="server" ImageUrl="~/image/shopcart.jpg" Height="30px" Width="98px" CausesValidation="False" OnClick="ImageButton2_Click" />
+      </div>
+
+        <div style="float:left; width: 100%; background-color: #36AD6B; line-height: 40px; text-align: left;">
+        &nbsp;&nbsp;&nbsp; |&nbsp;
+            <asp:LinkButton ID="LinkButton4" runat="server" ForeColor="Black" style="text-decoration: none;font-family: 华文中宋; font-size:large;" OnClick="LinkButton4_Click" CausesValidation="False">图书首页</asp:LinkButton>
+&nbsp; |&nbsp;
+            <asp:LinkButton ID="LinkButton5" runat="server" ForeColor="Black" style="text-decoration: none;font-family: 华文中宋; font-size:large;" OnClick="LinkButton5_Click" CausesValidation="False">订单详情</asp:LinkButton>
+&nbsp; |&nbsp;
+            <asp:LinkButton ID="LinkButton6" runat="server" ForeColor="Black" style="text-decoration: none;font-family: 华文中宋; font-size:large;" OnClick="LinkButton6_Click" CausesValidation="False">用户中心</asp:LinkButton>
+&nbsp; |&nbsp;
+            <asp:LinkButton ID="LinkButton7" runat="server" ForeColor="Black" style="text-decoration: none;font-family: 华文中宋; font-size:large;" OnClick="LinkButton7_Click" CausesValidation="False">网站帮助</asp:LinkButton>
+&nbsp; |
+        </div>
+       <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+                      <div style=" height:1000px; width:100%; text-align: center;line-height: 100px;  ">                                             
+                        </div>       
+                    </asp:ContentPlaceHolder>
+      </div>  
+      <div   style=" border-width: 1px; height:20px; width: 100%; background-color: #36AD6B; line-height: 30px; ">
+      </div>
+      <div style=" height:60px; line-height: 30px; text-align: center; font-size: medium; font-weight: normal; font-family: 宋体;"">
+
+          <asp:LinkButton ID="LinkButton3" runat="server" ForeColor="#1C1C1C" style="text-decoration: none;font-family: 华文中宋; font-size:medium; " BackColor="#36AD6B" OnClick="LinkButton3_Click">管理员入口</asp:LinkButton>
+            <br />
+          <asp:Label ID="Label3" runat="server" Text="The green wooden 所有所属 E-mail:2667331953@qq.com"></asp:Label>
+      </div>
+
+
+    &nbsp;</form>
+</body>
+</html>

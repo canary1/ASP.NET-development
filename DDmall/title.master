@@ -1,0 +1,29 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="title.master.cs" Inherits="title" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="width:100%">
+        <div  style="font-family: 微软雅黑; font-size: x-large; width:100%; height:57px; background-color: #00FF99; border: thin solid #808080; padding: 0px 0px 0px 0px; margin: 0px 0px 10px 0px; background-image: url('image/title.jpg'); background-repeat: no-repeat; float:right; text-align: right; line-height: 50px; vertical-align: middle;">
+            <asp:Label ID="Label2" runat="server" Text="" Font-Names="仿宋_GB2312" Font-Size="Medium" ForeColor="#333333" Height="30px" Width="150px"  Font-Overline="False"></asp:Label>
+            <asp:LinkButton ID="LinkButton1" runat="server" Font-Names="仿宋_GB2312"  Font-Size="Medium" ForeColor="#333333" Height="30px" Width="101px"  Font-Overline="False" OnClick="btnmain_Click">首页</asp:LinkButton>
+            <asp:LinkButton ID="btnbookmall" runat="server" Font-Names="仿宋_GB2312"  Font-Size="Medium" ForeColor="#333333" Height="30px" Width="101px"  Font-Overline="False" OnClick="btnbookmall_Click">所有书籍</asp:LinkButton>
+            <asp:LinkButton ID="btnlogin" runat="server" Font-Names="仿宋_GB2312"  Font-Size="Medium" ForeColor="#333333" Height="30px" Width="101px"  Font-Overline="False" onclick="btnlogin_Click">登录</asp:LinkButton>
+            <asp:LinkButton ID="btnshop" runat="server" Font-Names="仿宋_GB2312" Font-Size="Medium" ForeColor="#333333" Height="30px" Width="100px"  Font-Overline="False" margin="5px 10px 5px 10px" onclick="btnshop_Click">购物车</asp:LinkButton>
+            <asp:LinkButton ID="LinkButton2" runat="server" Font-Names="仿宋_GB2312"  Font-Size="Medium" ForeColor="#333333" Height="30px" Width="101px"  Font-Overline="False" OnClick="btnorder_Click">我的订单</asp:LinkButton>
+            <asp:LinkButton ID="btnorder" runat="server" Font-Names="仿宋_GB2312"  Font-Size="Medium" ForeColor="#333333" Height="30px" Width="100px"  Font-Overline="False" onclick="btnremove_Click">注销登录</asp:LinkButton>
+        </div>
+        <div >
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+     </asp:ContentPlaceHolder>
+</div>
+    </form>
+</body>
+</html>
